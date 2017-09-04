@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hgz.test.heguozhong1506a20170904.MainActivity">
+
+    <Button
+        android:id="@+id/btn_change_circle_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变颜色" />
+
+    <Button
+        android:id="@+id/btn_jiasu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_change_circle_color"
+        android:text="加速" />
+
+    <Button
+        android:id="@+id/btn_jiansu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_jiasu"
+        android:text="减速" />
+
+    <Button
+        android:id="@+id/btn_pause"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_jiansu"
+        android:text="暂停" />
+
+    <com.hgz.test.customviewcirclerotate.view.MyCircle
+        android:id="@+id/circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:circleBoundColor="#000000"
+        app:circleBoundWidth="3dp" />
+
+</RelativeLayout>
